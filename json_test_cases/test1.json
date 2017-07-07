@@ -1,0 +1,1152 @@
+{
+  "_header": "TEST 1: SAME SUBKIT WITH DIFFERENT REVISION ON DIFFERENT LEVELS; NESTED MISSING SUBKITS",
+  "existing": {
+    "list": [],
+    "lookup": []
+  },
+  "inserting": {
+    "trees": [
+      {
+        "pn": "MK",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1",
+        "is_missing": false,
+        "children": [
+          {
+            "pn": "SKA",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": false,
+            "children": [
+              {
+                "pn": "PPA",
+                "qty": "2",
+                "uom": "EA",
+                "is_kit": "0",
+                "description": "1",
+                "is_missing": false,
+                "children": []
+              },
+              {
+                "pn": "PPB",
+                "qty": "2",
+                "uom": "EA",
+                "is_kit": "0",
+                "description": "1",
+                "is_missing": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "pn": "SKB",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": false,
+            "children": [
+              {
+                "pn": "SKA",
+                "qty": "1",
+                "uom": "EA",
+                "is_kit": "1",
+                "description": "1",
+                "is_missing": false,
+                "children": [
+                  {
+                    "pn": "PPC",
+                    "qty": "2",
+                    "uom": "EA",
+                    "is_kit": "0",
+                    "description": "1",
+                    "is_missing": false,
+                    "children": []
+                  },
+                  {
+                    "pn": "PPD",
+                    "qty": "2",
+                    "uom": "EA",
+                    "is_kit": "0",
+                    "description": "1",
+                    "is_missing": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "pn": "SKC",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": true,
+            "children": [
+              {
+                "pn": "SKD",
+                "qty": "1",
+                "uom": "EA",
+                "is_kit": "1",
+                "description": "1",
+                "is_missing": true,
+                "children": [
+                  {
+                    "pn": "PPE",
+                    "qty": "2",
+                    "uom": "EA",
+                    "is_kit": "0",
+                    "description": "1",
+                    "is_missing": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "matching": {
+    "list": [
+      {
+        "pn": "MK",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKA",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-4611686018427387904",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKB",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKC",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKD",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKA",
+        "master_pn": "MK",
+        "parent_pn": "MK",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKB",
+        "master_pn": "MK",
+        "parent_pn": "MK",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKA",
+        "master_pn": "SKB",
+        "parent_pn": "SKB",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "4611686018427387904",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPA",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "PPB",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "PPC",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "4611686018427387904",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "PPD",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "4611686018427387904",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "SKC",
+        "master_pn": "MK",
+        "parent_pn": "MK",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKD",
+        "master_pn": "SKC",
+        "parent_pn": "SKC",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPE",
+        "master_pn": "SKD",
+        "parent_pn": "SKD",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      }
+    ],
+    "lookup": [
+      {
+        "subkit_pn": "SKA",
+        "master_pn": "MK",
+        "subkit_revision": "-4611686018427387904",
+        "master_revision": "-9223372036854775808"
+      },
+      {
+        "subkit_pn": "SKB",
+        "master_pn": "MK",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      },
+      {
+        "subkit_pn": "SKC",
+        "master_pn": "MK",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      },
+      {
+        "subkit_pn": "SKD",
+        "master_pn": "MK",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      }
+    ],
+    "receipt": [
+      {
+        "pn": "MK",
+        "kit_revision": "A",
+        "kit_status": "I",
+        "is_kit": "1"
+      },
+      {
+        "pn": "SKA",
+        "kit_revision": "A",
+        "kit_status": "C",
+        "is_kit": "1"
+      },
+      {
+        "pn": "SKB",
+        "kit_revision": "A",
+        "kit_status": "C",
+        "is_kit": "1"
+      },
+      {
+        "pn": "SKA",
+        "kit_revision": "B",
+        "kit_status": "C",
+        "is_kit": "1"
+      },
+      {
+        "pn": "PPA",
+        "kit_revision": null,
+        "kit_status": null,
+        "is_kit": "0"
+      },
+      {
+        "pn": "PPB",
+        "kit_revision": null,
+        "kit_status": null,
+        "is_kit": "0"
+      },
+      {
+        "pn": "PPC",
+        "kit_revision": null,
+        "kit_status": null,
+        "is_kit": "0"
+      },
+      {
+        "pn": "PPD",
+        "kit_revision": null,
+        "kit_status": null,
+        "is_kit": "0"
+      }
+    ],
+    "kit_tree": [
+      {
+        "pn": "MK",
+        "revision_name": "ALL",
+        "kit_navigation": {
+          "pn": "MK",
+          "revision_name": "ALL",
+          "children": [
+            {
+              "pn": "SKA",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPA",
+                  "revision_name": null,
+                  "children": []
+                },
+                {
+                  "pn": "PPB",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "pn": "SKB",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "SKA",
+                  "revision_name": "B",
+                  "children": [
+                    {
+                      "pn": "PPC",
+                      "revision_name": null,
+                      "children": []
+                    },
+                    {
+                      "pn": "PPD",
+                      "revision_name": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "pn": "SKC",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "SKD",
+                  "revision_name": "A",
+                  "children": [
+                    {
+                      "pn": "PPE",
+                      "revision_name": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [],
+        "parent_navigation": [],
+        "gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "SKB",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKA",
+            "subkit_revision": "B",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "SKC",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKB",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKC",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKC",
+        "revision_name": "ALL",
+        "kit_navigation": {
+          "pn": "SKC",
+          "revision_name": "ALL",
+          "children": [
+            {
+              "pn": "SKD",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPE",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKC",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKC",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "SKD",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPE",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKD",
+        "revision_name": "ALL",
+        "kit_navigation": {
+          "pn": "SKD",
+          "revision_name": "ALL",
+          "children": [
+            {
+              "pn": "PPE",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKC",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKD",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKD",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPE",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKC",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPE",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKB",
+        "revision_name": "ALL",
+        "kit_navigation": {
+          "pn": "SKB",
+          "revision_name": "ALL",
+          "children": [
+            {
+              "pn": "SKA",
+              "revision_name": "B",
+              "children": [
+                {
+                  "pn": "PPC",
+                  "revision_name": null,
+                  "children": []
+                },
+                {
+                  "pn": "PPD",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "B",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "B",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKB",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKB",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "SKA",
+              "revision_name": "B",
+              "children": [
+                {
+                  "pn": "PPC",
+                  "revision_name": null,
+                  "children": []
+                },
+                {
+                  "pn": "PPD",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "B",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKA",
+            "subkit_revision": "B",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKA",
+        "revision_name": "ALL",
+        "kit_navigation": {
+          "pn": "SKA",
+          "revision_name": "ALL",
+          "children": [
+            {
+              "pn": "PPA",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "PPB",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "PPC",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "PPD",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          },
+          {
+            "pn": "SKB",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKA",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKA",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPA",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "PPB",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKA",
+        "revision_name": "B",
+        "kit_navigation": {
+          "pn": "SKA",
+          "revision_name": "B",
+          "children": [
+            {
+              "pn": "PPC",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "PPD",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "MK",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKB",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      }
+    ]
+  }
+}

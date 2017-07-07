@@ -1,0 +1,600 @@
+{
+  "_header": "TEST 7: RECEIVE MULTIPLE MISSING KITS",
+  "existing": {
+    "list": [],
+    "lookup": []
+  },
+  "inserting": {
+    "trees": [
+      {
+        "pn": "SKA",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1",
+        "is_missing": false,
+        "children": [
+          {
+            "pn": "PPA",
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1",
+            "is_missing": false,
+            "children": []
+          },
+          {
+            "pn": "SKB",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": true,
+            "children": [
+              {
+                "pn": "PPB",
+                "qty": "2",
+                "uom": "EA",
+                "is_kit": "0",
+                "description": "1",
+                "is_missing": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "pn": "SKC",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": true,
+            "children": [
+              {
+                "pn": "PPC",
+                "qty": "2",
+                "uom": "EA",
+                "is_kit": "0",
+                "description": "1",
+                "is_missing": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "pn": "SKD",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1",
+            "is_missing": true,
+            "children": [
+              {
+                "pn": "PPD",
+                "qty": "2",
+                "uom": "EA",
+                "is_kit": "0",
+                "description": "1",
+                "is_missing": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "matching": {
+    "list": [
+      {
+        "pn": "SKA",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKB",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKC",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "SKD",
+        "master_pn": "",
+        "parent_pn": "",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPA",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "SKB",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPB",
+        "master_pn": "SKB",
+        "parent_pn": "SKB",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "SKC",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPC",
+        "master_pn": "SKC",
+        "parent_pn": "SKC",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      },
+      {
+        "pn": "SKD",
+        "master_pn": "SKA",
+        "parent_pn": "SKA",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "-9223372036854775808",
+        "qty": "1",
+        "uom": "EA",
+        "is_kit": "1",
+        "description": "1"
+      },
+      {
+        "pn": "PPD",
+        "master_pn": "SKD",
+        "parent_pn": "SKD",
+        "revision": "-9223372036854775808",
+        "subkit_revision": "0",
+        "qty": "2",
+        "uom": "EA",
+        "is_kit": "0",
+        "description": "1"
+      }
+    ],
+    "lookup": [
+      {
+        "subkit_pn": "SKB",
+        "master_pn": "SKA",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      },
+      {
+        "subkit_pn": "SKC",
+        "master_pn": "SKA",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      },
+      {
+        "subkit_pn": "SKD",
+        "master_pn": "SKA",
+        "subkit_revision": "-9223372036854775808",
+        "master_revision": "-9223372036854775808"
+      }
+    ],
+    "receipt": [
+      {
+        "pn": "SKA",
+        "kit_revision": "A",
+        "kit_status": "I",
+        "is_kit": "1"
+      },
+      {
+        "pn": "PPA",
+        "kit_revision": null,
+        "kit_status": null,
+        "is_kit": "0"
+      }
+    ],
+    "kit_tree": [
+      {
+        "pn": "PPB",
+        "revision_name": null,
+        "kit_navigation": {
+          "pn": "PPB",
+          "revision_name": null,
+          "children": []
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKB",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [],
+        "direct_gridview": []
+      },
+      {
+        "pn": "PPC",
+        "revision_name": null,
+        "kit_navigation": {
+          "pn": "PPC",
+          "revision_name": null,
+          "children": []
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKC",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [],
+        "direct_gridview": []
+      },
+      {
+        "pn": "PPD",
+        "revision_name": null,
+        "kit_navigation": {
+          "pn": "PPD",
+          "revision_name": null,
+          "children": []
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKD",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [],
+        "direct_gridview": []
+      },
+      {
+        "pn": "SKA",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKA",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPA",
+              "revision_name": null,
+              "children": []
+            },
+            {
+              "pn": "SKB",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPB",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "pn": "SKC",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPC",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "pn": "SKD",
+              "revision_name": "A",
+              "children": [
+                {
+                  "pn": "PPD",
+                  "revision_name": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        "master_navigation": [],
+        "parent_navigation": [],
+        "gridview": [
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "SKB",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "SKC",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          },
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "SKB",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKC",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "SKD",
+            "subkit_revision": "A",
+            "qty": "1",
+            "uom": "EA",
+            "is_kit": "1",
+            "description": "1"
+          },
+          {
+            "pn": "PPA",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKB",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKB",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPB",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPB",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKC",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKC",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPC",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPC",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      },
+      {
+        "pn": "SKD",
+        "revision_name": "A",
+        "kit_navigation": {
+          "pn": "SKD",
+          "revision_name": "A",
+          "children": [
+            {
+              "pn": "PPD",
+              "revision_name": null,
+              "children": []
+            }
+          ]
+        },
+        "master_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "parent_navigation": [
+          {
+            "pn": "SKA",
+            "revision_name": "A"
+          }
+        ],
+        "gridview": [
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ],
+        "direct_gridview": [
+          {
+            "pn": "PPD",
+            "subkit_revision": null,
+            "qty": "2",
+            "uom": "EA",
+            "is_kit": "0",
+            "description": "1"
+          }
+        ]
+      }
+    ]
+  }
+}
